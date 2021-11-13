@@ -1,0 +1,15 @@
+VAN_civil_war = {
+
+	scripted_gui = vanhoover_civil_war_gui
+	visible_when_empty = yes
+
+	allowed = {
+		tag = VAN
+	}
+	visible = {
+		tag = VAN
+	}
+	priority = {
+		base = 1011
+	}
+}
