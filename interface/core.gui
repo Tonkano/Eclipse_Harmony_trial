@@ -99,13 +99,6 @@ guiTypes = {
 			spriteType = "GFX_small_flag_frame_thin"
 			position = { x= 4 y = 4 }
 			alwaystransparent = yes
-		}
-		iconType = {
-			name = "diplo_country_flag_overlay"
-			spriteType = "GFX_shield_medium_animated"
-			position = { x = 6 y = 6 }
-			Orientation = "UPPER_LEFT"
-			alwaystransparent = yes
 		}		
 		
 	}
@@ -493,6 +486,25 @@ guiTypes = {
 	}
 	
 	containerWindowType = {
+		name = "slow_interface_win"
+		position = { x=-150 y=-8000}
+		Orientation = upper_right
+
+
+		instantTextboxType = {
+			name = "slow_text"
+			position = { x= 0 y = 0 }
+			font = "hoi_20b"
+			borderSize = {x = 0 y = 0}
+			text = "SLOW INTERFACE"
+			maxWidth = 200
+			maxHeight = 32
+			fixedsize = yes
+			format = left
+		}
+	}
+	
+	containerWindowType = {
 		name = "dark_overlay"
 		position = { x = 0 y = 0 }
 		size = { width = 123 height = 456 }
@@ -503,6 +515,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_in_game_menu_dark_overlay"
 		}
 	}
+
 }
 
 default_clicksound = "click_default"

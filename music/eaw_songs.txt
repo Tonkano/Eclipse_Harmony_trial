@@ -2,7 +2,7 @@ music_station = "eaw"
 
 ##### Equestria Peace ######
 music = {
-	song = "maintheme" #Neighsayer - Equestria's Finest
+	song = "Neighsayer_Equestrias_Finest" #Neighsayer - Equestria's Finest
 	chance = {
 		factor = 2
 
@@ -368,7 +368,7 @@ music = {
 				AND = {
 					original_tag = BAL
 					has_country_leader = {
-						name = "Lavender Berry"
+						character = BAL_lavender_berry
 						ruling_only = yes
 					}
 				}
@@ -386,7 +386,7 @@ music = {
 			AND = {
 				original_tag = BAL
 				has_country_leader = {
-					name = "Lavender Berry"
+					character = BAL_lavender_berry
 					ruling_only = yes
 				}
 			}

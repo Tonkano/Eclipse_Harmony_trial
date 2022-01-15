@@ -615,7 +615,7 @@ TRO = {
 	color = rgb { 170 0 9 }
 	color_ui = rgb { 170 0 9 }
 }
-FLY = {
-	color = rgb { 83 147 163 }
-	color_ui = rgb { 83 147 163 }
-}
+FIL = {
+	color = rgb { 38 255 240 }
+	color_ui = rgb { 38 255 240 }
+

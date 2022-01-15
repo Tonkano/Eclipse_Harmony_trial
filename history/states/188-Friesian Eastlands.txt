@@ -4,8 +4,8 @@ state={
 	name="STATE_188"
 
 	history={
-		owner = FLY
-		add_core_of = FLY
+		owner = FIL
+		add_core_of = FIL
 		buildings = {
 			infrastructure = 1
 		}

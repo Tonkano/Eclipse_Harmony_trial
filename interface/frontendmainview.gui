@@ -19,13 +19,14 @@ guiTypes = {
 			quadTextureSprite ="GFX_frontend_bg"
 			alwaystransparent = yes
 		}
-	# Christmas TIMEEEE is over!!!
-		#iconType = {
-         #   name = "snow_anim"
-         #   position = { x = 0 y = 180 }
-         #   quadTextureSprite = "GFX_frontend_bg_snow_anim"
-        #  orientation = upper_left
-		#}
+		
+		# Christmas TIMEEEE is ON!!!
+		iconType = {
+			name = "snow_anim"
+			position = { x = 0 y = 180 }
+			quadTextureSprite = "GFX_frontend_bg_snow_anim"
+			orientation = upper_left
+		}
 
 		#containerWindowType = {
 		#	name = "luna_bg"
@@ -100,15 +101,17 @@ guiTypes = {
 		animation_time = 1000
 		size = { width = 256 height = 768}
 		Orientation = lower_right
+        
+		# Old Hoi4 Coop Logo (Replace or something)
+		#ButtonType = {
+		#	name = "coop_logo"
+		#	position = { x= -105 y = 5 }
+		#	quadTextureSprite ="GFX_coop_logo"
+		#	clicksound = click_default
+		#	pdx_tooltip = "Click here to go to the Coop Steam Group"
+		#	web_link = "http://steamcommunity.com/groups/HOI4ModdingCoop"
+		#}
 
-		ButtonType = {
-			name = "coop_logo"
-			position = { x= -105 y = 5 }
-			quadTextureSprite ="GFX_coop_logo"
-			clicksound = click_default
-			pdx_tooltip = "Click here to go to the Coop Steam Group"
-			web_link = "http://steamcommunity.com/groups/HOI4ModdingCoop"
-		}
 		ButtonType = {
 			name = "achievements_button"
 			position = { x = -50 y = 25 }
@@ -143,7 +146,7 @@ guiTypes = {
 		{
 			name ="frontend_game_version"
 			spriteType = "GFX_frontend_game_version"
-			position = { x = -17 y = -57 }
+			position = { x = -17 y = -101 }
 		}
 
 		containerWindowType = {
@@ -253,7 +256,7 @@ guiTypes = {
 		{
 			name ="frontend_game_version"
 			spriteType = "GFX_frontend_game_version"
-			position = { x = -17 y = -57 }
+			position = { x = -17 y = -101 }
 		}
 
 		containerWindowType = {

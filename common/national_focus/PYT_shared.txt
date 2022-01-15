@@ -56,9 +56,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_militia_roots"
-		add_tech_bonus = {
+		add_doctrine_cost_reduction = {
 			name = cat_mass_assault
-			bonus = 1.0
+			cost_reduction = 0.5
 			uses = 2
 			category = cat_mass_assault
 		}
@@ -514,9 +514,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_professionalism"
-		add_tech_bonus = {
+		add_doctrine_cost_reduction = {
 			name = cat_grand_battle_plan
-			bonus = 1.0
+			cost_reduction = 0.5
 			uses = 2
 			category = cat_grand_battle_plan
 		}
@@ -1254,7 +1254,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = chromium
-			amount = 6
+			amount = 7
 			state = 399
 		}
 		hidden_effect = {
@@ -1565,6 +1565,9 @@ shared_focus = {
 				check_variable = { party_popularity@ruling_party > 0.34 }
 			}
 		}
+		has_full_control_of_state = 378
+		has_full_control_of_state = 447
+		has_full_control_of_state = 399
 	}
 
 	ai_will_do = {
@@ -1572,26 +1575,17 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_railroad"
-		378 = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
+		build_railway = {
+			level = 2
+			start_state = 378
+			target_state = 447
+			build_only_on_allied = yes
 		}
-		399 = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-		447 = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
+		build_railway = {
+			level = 2
+			start_state = 378
+			target_state = 399
+			build_only_on_allied = yes
 		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1828,9 +1822,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_base_strike_f"
-		add_tech_bonus = {
-			name = navdoctrine_bonus
-			bonus = 1.0
+		add_doctrine_cost_reduction = {
+			name = cat_base_strike
+			cost_reduction = 0.5
 			uses = 2
 			category = cat_base_strike
 		}
@@ -1913,9 +1907,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_fleet_being_f"
-		add_tech_bonus = {
-			name = navdoctrine_bonus
-			bonus = 1.0
+		add_doctrine_cost_reduction = {
+			name = cat_fleet_in_being
+			cost_reduction = 0.5
 			uses = 2
 			category = cat_fleet_in_being
 		}
@@ -2166,9 +2160,9 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_trade_indirection_f"
-		add_tech_bonus = {
-			name = navdoctrine_bonus
-			bonus = 1.0
+		add_doctrine_cost_reduction = {
+			name = cat_trade_interdiction
+			cost_reduction = 0.5
 			uses = 2
 			category = cat_trade_interdiction
 		}
@@ -2325,9 +2319,9 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_doctrinal_development"
 		air_experience = 25
-		add_tech_bonus = {
+		add_doctrine_cost_reduction = {
 			name = air_doc_bonus
-			bonus = 1.0
+			cost_reduction = 0.5
 			uses = 2
 			category = air_doctrine
 		}
@@ -3433,7 +3427,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PYT_the_peoples_republic
-	icon = GFX_focus_generic_join_comintern
+	icon = GFX_rohmer_icon
 	cost = 5.80
 	available = { always = no }
 	bypass = { has_country_flag = PYT_established_dictatorship }
@@ -3512,16 +3506,16 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_red_commandos"
-		create_corps_commander = {
-			name = "Lorenz Hassler"
-			portrait_path = "gfx/leaders/Asia/portrait_griffon_generic_land_7.dds"
+		add_corps_commander_role = {
+			character = PYT_lorenz_hassler
 			traits = { urban_assault_specialist infantry_leader ambusher griffon_race_trait }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 4
 			logistics_skill = 2
-		} custom_effect_tooltip = lorenz_hassler_stats_tp
+		}
+		custom_effect_tooltip = lorenz_hassler_stats_tp
 		add_ideas = PYT_RES
 	}
 	search_filters = { FOCUS_FILTER_ARMY_BONUS }
@@ -4157,10 +4151,23 @@ shared_focus = {
 
 	ai_will_do = {
 		factor = 110
+		modifier = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = PYT_ai_behavior
+					option = DEFAULT
+				}
+			}
+			factor = 0
+		}
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_the_new_duke"
 		country_event = { id = marschen.30 }
+		hidden_effect = {
+			ZES_oppressive_countries_calculate = yes
+		}
 	}
 }
 
@@ -4221,7 +4228,7 @@ shared_focus = {
 	available = {
 		has_government = neutrality
 		has_country_leader = {
-			name = "Duke Erebus II"
+			character = PYT_erebus_whiteplume
 			ruling_only = yes
 		}
 	}
@@ -5182,7 +5189,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PYT_the_griffon_path_to_harmony
-	icon = GFX_goal_GRF_new_economy
+	icon = GFX_archie_griffon_harmony
 	x = -2
 	y = 1
 	relative_position_id = PYT_harmony_prevails
@@ -5727,7 +5734,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PYT_the_equestrian_model
-	icon = GFX_goal_generic_equestria
+	icon = GFX_archie_pony_harmony
 	x = 2
 	y = 1
 	relative_position_id = PYT_harmony_prevails
@@ -7210,9 +7217,6 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_ideological_purity"
 		country_event = { id = marschen.45 }
-		hidden_effect = {
-			ZES_oppressive_countries_calculate = yes
-		}
 	}
 }
 
@@ -8200,7 +8204,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = chromium
-			amount = 10
+			amount = 12
 			state = 480
 		}
 		add_resource = {
@@ -8329,7 +8333,7 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = infrastructure
-				level = 4
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -8956,10 +8960,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 537.owner
-				generator = { 537 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 537
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 537.owner
+					generator = { 537 }
+				}
 			}
 		}
 		else = {
@@ -8979,10 +8990,17 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 552.owner
-				generator = { 552 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 552
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 552.owner
+					generator = { 552 }
+				}
 			}
 		}
 		else = {
@@ -9001,10 +9019,17 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 508.owner
-				generator = { 508 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 508
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 508.owner
+					generator = { 508 }
+				}
 			}
 		}
 		else = {
@@ -9017,10 +9042,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 512.owner
-				generator = { 512 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 512
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 512.owner
+					generator = { 512 }
+				}
 			}
 		}
 		else = {
@@ -9032,10 +9064,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 598.owner
-				generator = { 598 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 598
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 598.owner
+					generator = { 598 }
+				}
 			}
 		}
 		else = {
@@ -9047,10 +9086,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 608.owner
-				generator = { 608 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 608
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 608.owner
+					generator = { 608 }
+				}
 			}
 		}
 		else = {
@@ -9608,7 +9654,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = chromium
-			amount = 12
+			amount = 14
 			state = 545
 		}
 		add_resource = {
@@ -10989,6 +11035,15 @@ shared_focus = {
 		    ideology = fascism 
 			popularity = 0.05 
 		}
+		event_target:GRI_archon_eros_vii_target = {
+			set_nationality = ROOT
+		}
+		event_target:GRI_archon_erion_target = {
+			set_nationality = ROOT
+		}
+		event_target:GRI_archon_proteus_target = {
+			set_nationality = ROOT
+		}
 		custom_effect_tooltip = available_political_advisor
 		show_ideas_tooltip = PYT_eros
 		custom_effect_tooltip = available_political_advisor
@@ -11647,7 +11702,7 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = infrastructure
-				level = 4
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -12085,10 +12140,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 537.owner
-				generator = { 537 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 537
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 537.owner
+					generator = { 537 }
+				}
 			}
 		}
 		else = {
@@ -12108,10 +12170,17 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 552.owner
-				generator = { 552 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 552
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 552.owner
+					generator = { 552 }
+				}
 			}
 		}
 		else = {
@@ -12130,10 +12199,17 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 508.owner
-				generator = { 508 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 508
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 508.owner
+					generator = { 508 }
+				}
 			}
 		}
 		else = {
@@ -12146,10 +12222,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 512.owner
-				generator = { 512 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 512
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 512.owner
+					generator = { 512 }
+				}
 			}
 		}
 		else = {
@@ -12161,10 +12244,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 598.owner
-				generator = { 598 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 598
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 598.owner
+					generator = { 598 }
+				}
 			}
 		}
 		else = {
@@ -12176,10 +12266,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 608.owner
-				generator = { 608 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 608
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 608.owner
+					generator = { 608 }
+				}
 			}
 		}
 		else = {
@@ -13795,6 +13892,9 @@ shared_focus = {
 	prerequisite = { focus = PYT_care_for_poor }
 	available = {
 		has_government = democratic
+		has_full_control_of_state = 378
+		has_full_control_of_state = 447
+		has_full_control_of_state = 399
 	}
 	
 	ai_will_do = {
@@ -13802,14 +13902,17 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PYT_connect_nation_3"
-		every_owned_state = {
-			limit = { is_core_of = PYT }
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
+		build_railway = {
+			level = 2
+			start_state = 378
+			target_state = 447
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 2
+			start_state = 399
+			target_state = 447
+			build_only_on_allied = yes
 		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -14542,7 +14645,7 @@ shared_focus = {
 	available = {
 		has_government = fascism
 		has_country_leader = {
-			name = "Wilke Truthahn"
+			character = PYT_wilke_truthahn
 			ruling_only = yes
 		}
 	}
@@ -15216,7 +15319,7 @@ shared_focus = {
 			}
 			add_building_construction = {
 				type = infrastructure
-				level = 4
+				level = 3
 				instant_build = yes
 			}
 		}
@@ -15651,10 +15754,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 537.owner
-				generator = { 537 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 537
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 537.owner
+					generator = { 537 }
+				}
 			}
 		}
 		else = {
@@ -15674,10 +15784,17 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 552.owner
-				generator = { 552 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 552
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 552.owner
+					generator = { 552 }
+				}
 			}
 		}
 		else = {
@@ -15696,10 +15813,17 @@ shared_focus = {
 					}
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 508.owner
-				generator = { 508 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 508
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 508.owner
+					generator = { 508 }
+				}
 			}
 		}
 		else = {
@@ -15712,10 +15836,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 512.owner
-				generator = { 512 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 512
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 512.owner
+					generator = { 512 }
+				}
 			}
 		}
 		else = {
@@ -15727,10 +15858,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 598.owner
-				generator = { 598 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 598
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 598.owner
+					generator = { 598 }
+				}
 			}
 		}
 		else = {
@@ -15742,10 +15880,17 @@ shared_focus = {
 					exists = no
 				}
 			}
-			create_wargoal = {
-				type = take_state_focus
-				target = 608.owner
-				generator = { 608 }
+			if = {
+				limit = {
+					NOT = {
+						owns_state = 608
+					}
+				}
+				create_wargoal = {
+					type = take_state_focus
+					target = 608.owner
+					generator = { 608 }
+				}
 			}
 		}
 		else = {

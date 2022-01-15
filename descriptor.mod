@@ -33,5 +33,5 @@ tags={
 	"Map"
 }
 
-supported_version="1.10.*"
+supported_version="1.11.*"
 path="mod/eclipse"

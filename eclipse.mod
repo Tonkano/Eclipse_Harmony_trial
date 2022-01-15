@@ -32,5 +32,5 @@ tags={
 	"Events"
 	"Map"
 }
-supported_version="1.10.*"
+supported_version="1.11.*"
 path="C:/Users/Kurt/Documents/Paradox Interactive/Hearts of Iron IV/mod/Eclipse_Harmony_trial"

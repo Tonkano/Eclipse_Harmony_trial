@@ -188,28 +188,4 @@ ideas = {
 			}
 		}
 	}
-	
-	political_advisor = {
-		# POLITICAL
-		juniper_sparrow= {
-			picture = unknown_advisor
-			allowed = {
-			}
-
-			available = {
-			}
-
-			traits = { communist_revolutionary }
-
-			on_add = {
-			}
-
-			do_effect = {
-			}
-
-			ai_will_do = {
-				factor = 0
-			}
-		}
-	}
 }

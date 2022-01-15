@@ -9,6 +9,7 @@ Jaspy
 
 #CONTRIBUTORS
 Adagio
+Agatha
 Algol
 Angriest Bird
 AppleAle
@@ -22,12 +23,14 @@ Augenis
 Axidant
 Baron
 Best Wizard
+Big Bruddah
 Bipen
 Brandon
 BunnyShrubby
 Carvor
 catnapper
 Cazzym
+Cataline
 Cherrypone
 cijik
 Cinder Script
@@ -36,15 +39,20 @@ Cofido
 Computational Pragmatist
 Couatl
 CowsRTasty
+Cunard
+Cwop
 Cynewulf
+Damiyan
 Danior5
 Dr. Gilderoy
 Dr. Njitram
+DarthRiki01
 Didicody
 dingosupastar
 DukeVonKessel
 Dzhasa
 Echo
+Egil
 EmpressBridle
 Feitanakin
 Feveros
@@ -54,24 +62,29 @@ Finland
 Flake
 Flying Dutchpony
 Franz Libkind
+Freudensonne von Zwielicht
 gdvp111
 Gara-The-Author
 Gearheart
 gelter
+Gereval
 Goldenwing
 GonzaloIrkatan
 Gorkamorka
+GrandPri
 GreatPretender
 Guidrion
+HappyNTH
 Hellstorm12
 Honcho
 Husarz aka Luna
 Hysterical Fox
-IvanVodkin2012
+idenr
 Ignacio
 Илларион
 Imit4tor
 Indyclone77
+John Baggins
 jnzsblzs
 JustAnotherPonyGuy
 Kajko
@@ -82,6 +95,7 @@ Knifepony
 Knoster
 Kuche
 Leo the Pone
+LiteFire
 Lovenought
 lukeskylicker
 Lumi
@@ -97,7 +111,9 @@ Miltonian
 MiszczTheMaste
 Moonatik
 MonAx
+Mr. PumzA
 Murp
+Murena
 MustaphaTR
 Myxine
 Nagerleral
@@ -112,11 +128,14 @@ Nyatta
 Okami Wolf
 Orion
 Orwell
+Patriotic Pony
 Peko
 Pipsqueak
+Podrick Equus
 Printik
 Professional Horse
 Psody
+Rafomom
 RainyDay
 Raminy
 Raptor_Jesus
@@ -126,14 +145,20 @@ Rich May
 Riley Vinchers
 Rokim21
 Romeo Man
+Rugar
+RyanManDraws
 Sadsaltan
 Sbadkins4 'The Captain'
+Scars
+Sciv888
+Scorg
 SerPounce
 Sesek1
 Shade
 Shalax
 Shepard
 Sinister
+Sosninsky
 Sparkplug
 StDeadRa
 Stemis
@@ -141,17 +166,20 @@ Sunrise
 Sweet Chrysalis
 StanislavivBall
 TechnocommieSparkle();
+Tek
 Telly
 Tempest
 TerrihbahSpehlar
+Thane of Kovdor
 ThatZealousOne
 The 24th Pegasus
+The_Suspect
 TheFuego
 TheGreatPretender
 The_Laundry
 Thor
 Thymos
-TimesNewLogan
+Tiddo
 Twotail813
 Tzyca
 Udy
@@ -162,38 +190,20 @@ Valmoric
 Vanilla Swirl
 Vasily
 Vexili
+Vizor
 VoidTemplar
 vren55
 Wells
 Wes
 Wondermane
 Xilg
-yastorm
+Yankee
+yastrom
 ziad5241
 Zimbabwe Salt Co.
 
-#TRANSLATORS
-Agatha
-Big Bruddah
-Cwop
-Damiyan
-Freudigsonne
-Gereval
-GrandPri
-idenr
-LiteFire
-Mr. PumzA
-Murena
-RoSoEro
-Rugar
-Vizor
-Sciv888
-Scorg
-Sosninsky
-The_Suspect
-
 #MAIN MENU ART BY:
-Shamanguli
+Leo the Pony
 
 #ADDITIONAL ART BY:
 Angelo Person
@@ -218,6 +228,8 @@ Tito
 Tsurime
 Lamp
 RyansPlace
+Tallcastle
+Ringwraith
 
 #MUSIC BY:
 Aida Vedischeva
@@ -240,7 +252,6 @@ Hasbro
 DHX Media
 Paradox Interactive
 Paradox Development Studio
-RainyDay
 Greatexperiment
 Eight Years' War of Resistance
 Kaiserreich Team
@@ -249,6 +260,7 @@ Cherios
 Thinking Waffle
 Xelacient
 starwarsfan541
+Lemur
 HoI 4 Modding Coop
 All artists and creators whose work has been used
 Our wonderful community

@@ -1174,7 +1174,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_found_the_rdc
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 5
@@ -1247,7 +1247,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_found_the_rdc
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 5
@@ -1335,7 +1335,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = RIV_rdc_industry_projects
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 5
@@ -2572,7 +2572,7 @@ shared_focus = {
 			limit = {
 				AND = {
 					original_tag = WIT
-					has_country_leader = { ruling_only = yes name = "White Star" }
+					has_country_leader = { ruling_only = yes character = WIT_white_star }
 				}
 			}
 			news_event = {id = riverfednews.4 days = 1 random = 48 }#hours to days applied
@@ -2581,7 +2581,7 @@ shared_focus = {
 			limit = {
 				AND = {
 					original_tag = WIT
-					has_country_leader = { ruling_only = yes name = "Voliare Gingerbeard" }
+					has_country_leader = { ruling_only = yes character = WIT_voliare_gingerbeard }
 				}
 			}
 			news_event = {id = riverfednews.5 days = 1 random = 48 }#hours to days applied
@@ -2591,8 +2591,8 @@ shared_focus = {
 				AND = {
 					original_tag = WIT
 					NOT = {
-						has_country_leader = { ruling_only = yes name = "White Star" }
-						has_country_leader = { ruling_only = yes name = "Voliare Gingerbeard" }
+						has_country_leader = { ruling_only = yes character = WIT_white_star }
+						has_country_leader = { ruling_only = yes character = WIT_voliare_gingerbeard }
 					}
 				}
 			}

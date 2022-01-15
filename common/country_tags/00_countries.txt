@@ -106,4 +106,4 @@ CHG = "countries/UnionOfDitrysium.txt"
 GBA = "countries/GriffonianBlackArmy.txt"
 ACO = "countries/Acornage.txt"
 TRO = "countries/CountyOfTrotland.txt"
-FLY = "countries/Fillydelphia.txt"
+FIL = "countries/Fillydelphia
