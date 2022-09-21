@@ -1,6 +1,0 @@
-spriteTypes = {
-	SpriteType = {
-		name = "GFX_vanhoover_outline"
-		texturefile = "gfx/interface/EEaW/vanhoover_gui/vanhoover_outline.dds"
-	}
-}
