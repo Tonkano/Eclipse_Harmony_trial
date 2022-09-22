@@ -1,4 +1,11 @@
-
+GBA = {
+	color = rgb { 22 15 7 }
+	color_ui = rgb { 22 15 7 }
+}
+CHG = {
+	color = rgb { 255 10 10 }
+	color_ui = rgb { 255 10 10 }
+}
 EQS = {
 	color = rgb { 158 242 117 }
 	color_ui = rgb { 158 242 117 }
@@ -30,10 +37,6 @@ OLE = {
 CHN = {
 	color = rgb { 60 64 86 }
 	color_ui = rgb { 60 64 86 }
-}
-CHG = {
-	color = rgb { 255 10 10 }
-	color_ui = rgb { 255 10 10 }
 }
 GRF = {
 	color = rgb { 226 163 79 }

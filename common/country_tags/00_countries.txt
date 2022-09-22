@@ -1,4 +1,8 @@
+
+############################ Eclipse Content ####
+GBA = "countries/GriffonianBlackArmy.txt"
 CHG = "countries/UnionOfDitrysium.txt"
+
 EQS = "countries/Equestria.txt"
 DRG = "countries/Dragon.txt"
 OLE = "countries/Olenia.txt"
