@@ -1,0 +1,6 @@
+
+############################ Eclipse Content ####
+GBA = "countries/GriffonianBlackArmy.txt"
+CHG = "countries/UnionOfDitrysium.txt"
+ACO = "countries/Acornage.txt"
+TRT = "countries/CountyOfTrotland.txt"

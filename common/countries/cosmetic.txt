@@ -1,0 +1,4 @@
+CRY_WST = {
+	color = rgb { 20 20 20 }
+	color_ui = rgb { 20 20 20 }
+}

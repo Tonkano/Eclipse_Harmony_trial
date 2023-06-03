@@ -11,8 +11,9 @@ state={
 	buildings_max_level_factor=1.00
 
 	history={
-		owner = TRO
-		add_core_of = TRO
+		owner = TRT
+		add_core_of = TRT
+		add_claim_by = EQS
 
 		victory_points = { 9867 3 }
 

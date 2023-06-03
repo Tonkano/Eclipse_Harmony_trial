@@ -10,7 +10,7 @@ ACO = {
 	color = rgb { 86 58 58 }
 	color_ui = rgb { 86 58 58 }
 }
-TRO = {
+TRT = {
 	color = rgb { 170 0 9 }
 	color_ui = rgb { 170 0 9 }
 }

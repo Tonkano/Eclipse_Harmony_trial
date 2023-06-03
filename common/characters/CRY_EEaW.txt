@@ -1,0 +1,14 @@
+characters={
+	CRY_wasteland = {
+		name = CRY_wasteland
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRY/frozen_wasteland.tga"
+			}
+		}
+		country_leader = {
+			ideology=centrism
+			expire="1965.1.1"
+		}
+	}
+}
