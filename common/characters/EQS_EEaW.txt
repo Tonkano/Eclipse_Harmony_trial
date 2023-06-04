@@ -1,0 +1,19 @@
+characters = {
+	EQS_EEaW_twilight_sparkle = {
+		name = EQS_twilight_sparkle
+		portraits = {
+			civilian = {
+				large="gfx/leaders/CRY/Twilight.tga"
+				small = "GFX_idea_EQS_twilight_sparkle"
+			}
+		}
+		country_leader = {
+			ideology = alicornrule
+			expire = "1965.1.1"
+			traits = {
+				element_of_magic
+			}
+		}
+		gender = female
+	}
+}

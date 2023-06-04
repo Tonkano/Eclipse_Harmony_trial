@@ -32,3 +32,5 @@ set_popularities = {
 	communism = 80
 	neutrality = 5
 }
+
+recruit_character = CHG_queen_helvia

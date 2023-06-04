@@ -400,8 +400,8 @@ if = {
 		armored_car1 = 1
 	}
 }
-add_opinion_modifier = { modifier = equestrian_kindness target = BUF }
-give_guarantee = BUF
+#add_opinion_modifier = { modifier = equestrian_kindness target = BUF }
+#give_guarantee = BUF
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
 	amount = 10000
@@ -439,11 +439,11 @@ set_politics = {
 }
 
 add_ideas = {
-	home_of_ponies
-	alicorn_sisters
-	friendly_harmony
-	harmonic_stagnation
-	EQS_bat_pony_divide_1
+	#home_of_ponies
+	#alicorn_sisters
+	#friendly_harmony
+	#harmonic_stagnation
+	#EQS_bat_pony_divide_1
 }
 if = {
 	limit = {
@@ -498,9 +498,10 @@ if = {
 set_stability = 0.65
 set_war_support = 0.3
 
+recruit_character = EQS_EEaW_twilight_sparkle
 recruit_character = EQS_prince_blueblood
 recruit_character = EQS_chancellor_neighsay
-recruit_character = EQS_princess_celestia
+#recruit_character = EQS_princess_celestia
 recruit_character = EQS_starlight_glimmer
 recruit_character = EQS_soarin
 recruit_character = EQS_fast_clip
@@ -510,7 +511,7 @@ recruit_character = EQS_evening_squall
 recruit_character = EQS_cynosura
 recruit_character = EQS_dust_hoover
 recruit_character = EQS_copper_gearheart_cog
-recruit_character = EQS_twilight_sparkle
+#recruit_character = EQS_twilight_sparkle
 recruit_character = EQS_cocopomell
 recruit_character = EQS_flim_flam
 recruit_character = EQS_raven_inkwell

@@ -1,0 +1,10 @@
+characters = {
+	TRT_charcoal = {
+		name = TRT_charcoal
+		gender = female
+		country_leader = {
+			ideology = centrism
+			expire = "1965.1.1"
+		}
+	}
+}

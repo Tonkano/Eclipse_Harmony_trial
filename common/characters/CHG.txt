@@ -1,0 +1,18 @@
+characters = {
+	CHG_queen_helvia = {
+		name=chn_queen_helvia
+		gender=female
+		portraits={
+			army={
+				small= GFX_idea_CHN_queen_helvia
+			}
+		}
+		country_leader = {
+			ideology = stalinism
+			expire = "1965.1.1"
+			traits = {
+				queen_helvia
+			}
+		}
+	}
+}

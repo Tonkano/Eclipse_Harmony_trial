@@ -32,3 +32,5 @@ set_popularities = {
 	communism = 0
 	neutrality = 87
 }
+
+recruit_character = GBA_gerhart

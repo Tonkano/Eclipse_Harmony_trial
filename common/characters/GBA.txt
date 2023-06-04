@@ -1,0 +1,9 @@
+characters = {
+	GBA_gerhart = {
+		name = GBA_gerhart
+		country_leader = {
+			ideology = oligarchism
+			expire = "1965.1.1"
+		}
+	}
+}

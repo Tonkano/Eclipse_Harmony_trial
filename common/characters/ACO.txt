@@ -1,0 +1,12 @@
+characters = {
+	ACO_crimson_gem = {
+		name = ACO_crimson_gem
+		gender = female
+		portraits = {
+		}
+		country_leader = {
+			ideology = falangism
+			expire = "1965.1.1"
+		}
+	}
+}

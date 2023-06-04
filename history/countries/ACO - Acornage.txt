@@ -20,7 +20,7 @@ actually_fix_weapon_techs = yes
 set_convoys = 20
 
 set_politics = {
-	ruling_party = fascist
+	ruling_party = fascism
 	last_election = "1007.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -30,5 +30,16 @@ set_popularities = {
 	democratic = 30
 	fascism = 40
 	communism = 1
-	neutrality = 39
+	neutrality = 29
+	equalism = 0
+	syndicalism = 0
+	social_harmony = 0
+	authoritarian_harmony = 0
+	libertarianism = 0
+	constitutional_monarchy = 0
+	despotism = 0
+	alt_right_cult = 0
+	anarchism = 0
 }
+
+recruit_character = ACO_crimson_gem
