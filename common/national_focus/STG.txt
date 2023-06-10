@@ -1,0 +1,12 @@
+focus_tree = {
+	id = stalliongrad_EEaW_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = STG
+		}
+	}
+	continuous_focus_position = { x = 2675 y = 100 }
+	default = no
+}
