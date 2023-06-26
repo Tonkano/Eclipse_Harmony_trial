@@ -1,0 +1,216 @@
+###Equestria has gone to crap and now it's Twiggles' job to fix it###
+shared_focus = {
+	id = EQS_twilight_regency
+	x = 10
+	y = 0
+	
+	cost = 1
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_twilight_regency"
+		#Event here
+	}
+	
+	ai_will_do = { factor = 320 }
+}
+
+shared_focus = {
+	id = EQS_nationalist_principles
+	x = -4
+	y = 1
+	relative_position_id = EQS_twilight_regency
+	
+	cost = 2
+	prerequisite = { focus = EQS_twilight_regency }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_nationalist_principles"
+		#Event here
+	}
+	
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = EQS_democratic_principles
+	x = 0
+	y = 1
+	relative_position_id = EQS_twilight_regency
+	
+	cost = 2
+	prerequisite = { focus = EQS_twilight_regency }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_democratic_principles"
+		#Event here
+	}
+	
+	ai_will_do = { factor = 80 }
+}
+
+shared_focus = {
+	id = EQS_drafting_constitution
+	x = 0
+	y = 1
+	relative_position_id = EQS_democratic_principles
+	
+	cost = 3
+	prerequisite = { focus = EQS_democratic_principles }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_drafting_constitution"
+		#Event here
+	}
+	
+	ai_will_do = { factor = 160 }
+}
+
+shared_focus = {
+	id = EQS_unlimited_powa
+	x = -2
+	y = 1
+	relative_position_id = EQS_drafting_constitution
+	
+	cost = 3
+	prerequisite = { focus = EQS_drafting_constitution }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_unlimited_powa"
+		#Event here
+	}
+	
+	ai_will_do = { factor = 160 }
+}
+
+shared_focus = {
+	id = EQS_power_the_legislature
+	x = 0
+	y = 1
+	relative_position_id = EQS_drafting_constitution
+	
+	cost = 3
+	prerequisite = { focus = EQS_drafting_constitution }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_power_the_legislature"
+		#Event?
+	}
+	
+	ai_will_do = { factor = 80 }
+}
+
+shared_focus = {
+	id = EQS_judge_powers
+	x = 2
+	y = 1
+	relative_position_id = EQS_drafting_constitution
+	
+	cost = 3
+	prerequisite = { focus = EQS_drafting_constitution }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_judge_powers"
+		#Event?
+	}
+	
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = EQS_encourage_cooperation
+	x = 0
+	y = 1
+	relative_position_id = EQS_unlimited_powa
+	
+	cost = 3
+	prerequisite = { focus = EQS_unlimited_powa }
+	prerequisite = { focus = EQS_power_the_legislature }
+	mutually_exclusive = { focus = EQS_encourage_republican_sentiment }
+	mutually_exclusive = { focus = EQS_control_nobles }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_encourage_cooperation"
+		#Event?
+	}
+	
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = EQS_encourage_republican_sentiment
+	x = 0
+	y = 1
+	relative_position_id = EQS_power_the_legislature
+	
+	cost = 3
+	prerequisite = { focus = EQS_unlimited_powa }
+	prerequisite = { focus = EQS_power_the_legislature }
+	prerequisite = { focus = EQS_judge_powers }
+	mutually_exclusive = { focus = EQS_encourage_cooperation }
+	mutually_exclusive = { focus = EQS_control_nobles }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_encourage_republican_sentiment"
+		#Event?
+	}
+	
+	ai_will_do = { factor = 160 }
+}
+
+shared_focus = {
+	id = EQS_control_nobles
+	x = 0
+	y = 1
+	relative_position_id = EQS_judge_powers
+	
+	cost = 3
+	prerequisite = { focus = EQS_power_the_legislature }
+	prerequisite = { focus = EQS_judge_powers }
+	mutually_exclusive = { focus = EQS_encourage_cooperation }
+	mutually_exclusive = { focus = EQS_encourage_republican_sentiment }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_control_nobles"
+		#Event?
+	}
+	
+	ai_will_do = { factor = 40 }
+}
+
+shared_focus = {
+	id = EQS_democracy_saved
+	x = 0
+	y = 1
+	relative_position_id = EQS_encourage_republican_sentiment
+	
+	cost = 5
+	prerequisite = {
+		focus = EQS_encourage_cooperation
+		focus = EQS_encourage_republican_sentiment
+		focus = EQS_control_nobles
+	}
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_democracy_saved"
+		#Event?
+	}
+	
+	ai_will_do = { factor = 160 }
+}
+
+shared_focus = {
+	id = EQS_livelihood_principles
+	x = 4
+	y = 1
+	relative_position_id = EQS_twilight_regency
+	
+	cost = 2
+	prerequisite = { focus = EQS_twilight_regency }
+	
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName] EQS_livelihood_principles"
+		#Event here
+	}
+	
+	ai_will_do = { factor = 80 }
+}
